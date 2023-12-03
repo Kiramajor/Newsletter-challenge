@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color:  hsl(234, 29%, 20%);
+}
+/* Mobile View */
+@media only screen and (max-width:426px){
+    .main{
+        display: block;
+    }
+    .image .desktop{
+        display: none;
+    }
+    .container{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .image .mobile{
+        display: block;
+        width: 100%;
+    }
+    #success{
+        display: none;
+    }
+    .side{
+        background-color: white;
+    }
+    .side h1{
+        text-align: center;
+        padding: 10px;
+    }
+    p{
+        font-size: 16px;
+        font-family: 'Roboto-Regular';
+        padding: 10px;
+    }
+    .side div{
+        padding: 5px;
+    }
+    label{
+        font-size: 16px;
+    }
+    input[type="email"]{
+        padding: 15px;
+        width: 90%;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin-top: 10px;
+    }
+    #btn{
+        padding: 10px;
+        margin-top: 10px;
+        width: 90%;
+        color: white;
+        background-color: hsl(234, 29%, 20%);
+        border-radius: 10px;
+        border: 1px hidden black;
+        transition: background-color 2s ease-in-out;
+    }
+    #btn:hover{
+        background: hsl(4, 100%, 67%);
+    }
+    /* Success */
+    #success{
+        display: none;
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 10px;
+        width: 60%;
+        height: 300px;
+    }
+    .icon .desktop{
+        display: none;
+    }
+    .btn{
+        padding: 10px;
+        background-color: hsl(234, 29%, 20%);
+        color: white;
+        width: 90%;
+        border: 1px hidden black;
+        border-radius: 10px;
+        margin-top: 140px;
+        transform: background-color 2s ease-in;
+    }
+    .btn:hover{
+        background-color: hsl(4, 100%, 67%);
+    }
+    .show{
+        display: block;
+    }
+    ul{
+        border: 1px hidden black;
+        list-style-type: disc;
+    }
+    li{
+        border: 1px hidden black;
+        font-size: 16px;
+        padding: 10px;
+    }
+
+}
+/* Desktop View */
+@media only screen and (min-width:426px){
+    .main{
+        display: block;
+    }
+    .image .mobile{
+        display: none;
+    }
+    .container{
+        background-color: white;
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        border-radius: 20px;
+    }
+    .image{
+        width: 40%;
+    }
+    .image .desktop{
+        width: 100%;
+        height: auto;
+    }
+    /* Checkbox */
+    ul{
+        border: 1px hidden black;
+        list-style-type: none;
+    }
+    li{
+        border: 1px hidden black;
+        font-size: 20px;
+        margin-left: 5px;
+        padding: 10px;
+    }
+    
+    /* Side */
+    .side{
+        border: 1px hidden black;
+        width: 60%;
+        height: auto;
+        padding: 20px;
+        border-radius: 20px;
+    }
+    .side h1{
+        text-align: center;
+        padding: 30px;
+        font-size: 50px;
+        font-family: 'Roboto-Bold';
+    }
+    p{
+        font-size: 20px;
+        padding: 10px;
+        font-family: 'Roboto-Regular';
+    }
+    input[type="checkbox"]{
+        height: 15px;
+        width: auto;
+        border: 1px solid  black;
+        border-radius: 50%;
+        background-color: hsl(4, 100%, 67%);
+    }
+    label{
+        font-size: 20px;
+        padding: 10px;
+    }
+    input[type="email"]{
+        padding: 10px;
+        width:90%;
+        border: 1px solid black;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+    #btn{
+        padding: 10px;
+        background-color: hsl(234, 29%, 20%);
+        margin-top: 10px;
+        width: 90%;
+        border-radius: 10px;
+        border: 1px hidden black;
+        color: white;
+        transition: background-color 1s ease-in-out;
+    }
+    #btn:hover{
+        background-color: hsl(4, 100%, 67%);
+    }
+    /* Aside */
+    .success{
+        display: none;
+        border:1px hidden black;
+        border-radius: 20px;
+        padding: 10px;
+        width: 60%;
+    }
+    .icon .mobile{
+        display: none;
+    }
+    .btn{
+        padding: 10px;
+        width:90%;
+        color: white;
+        background-color: hsl(234, 29%, 20%);
+        border: 1px hidden black;
+        border-radius: 10px;
+        transform: background-color 1s ease-in;
+    }
+    .btn:hover{
+        background-color: hsl(4, 100%, 67%);
+    }
+    p.suc-text{
+        font-size: 16px;
+    }
+    .show{
+        display: none;
+    }
+}

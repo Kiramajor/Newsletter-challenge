@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newsletter</title>
+    <link rel="stylesheet" href="news.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main class="main">
+      <section class="container">
+        <div class="image">
+          <img
+            src="images/illustration-sign-up-desktop.svg"
+            alt="desktop"
+            class="desktop"
+          />
+          <img
+            src="images/illustration-sign-up-mobile.svg"
+            alt="mobile"
+            class="mobile"
+          />
+        </div>
+        <div class="side">
+          <h1>Stay updated!</h1>
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+          <ul class="checkbox-container">
+            <li>
+              <i
+                class="fa-sharp fa-solid fa-circle-check fa-lg"
+                style="color: #ff6257"
+              ></i
+              >Product discovery and building what matters
+            </li>
+            <li>
+              <i
+                class="fa-sharp fa-solid fa-circle-check fa-lg"
+                style="color: #ff6257"
+              ></i
+              >Measuring to ensure upates are a success
+            </li>
+            <li>
+              <i
+                class="fa-sharp fa-solid fa-circle-check fa-lg"
+                style="color: #ff6257"
+              ></i
+              >And much more!
+            </li>
+          </ul>
+          <form method="get" autocomplete="on" id="form-list">
+            <div class="my-form">
+              <div>
+                <label
+                  ><b>Email address</b>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="email@company.com"
+                    id="email"
+                  />
+                  <div>
+                    <button id="btn" name="submit" type="button">
+                      Subscribe to monthly newsletter
+                    </button>
+                  </div></label
+                >
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <aside class="success">
+      <div class="icon">
+        <img src="images/icon-success.svg" alt="success" class="desktop" />
+        <img src="images/icon-list.svg" alt="success" class="mobile" />
+      </div>
+      <h1>Thanks for subscribing!</h1>
+      <p class="suc-text"></p>
+      <button class="btn" type="submit" name="submit">Dismiss message</button>
+    </aside>
+    <script src="news.js"></script>
+  </body>
+</html>
